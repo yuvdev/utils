@@ -10,6 +10,8 @@ namespace CloseThatFcknIE
         {
             var ies = Process.GetProcesses().Where(x => x.ProcessName == "iexplore");
 
+            // TODO : только для этого пользователя
+
             Console.WriteLine($"Total to kill: {ies.Count()}");
 
             foreach (var proc in ies)
